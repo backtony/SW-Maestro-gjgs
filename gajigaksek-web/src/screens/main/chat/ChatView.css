@@ -1,0 +1,28 @@
+.chat-container {
+  display: flex;
+}
+
+.chat-room-list-wrapper {
+  width: 410px;
+  padding: 20px;
+}
+
+.chat-class-select {
+  width: 370px;
+  height: 44px;
+  padding: 12px 10px 12px 20px;
+  border-radius: 10px;
+  background-color: #f9f9fa;
+  margin-top: 10px;
+  border-width: 0px;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+
+  margin-bottom: 40px;
+}

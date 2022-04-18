@@ -1,0 +1,106 @@
+.class-manage-item {
+  display: flex;
+}
+
+.class-manage-item > div > div {
+  margin-left: 20px;
+}
+
+.class-manage-item :nth-child(1) {
+  width: 100px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+
+.class-manage-item :nth-child(2) {
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+
+.class-manage-item :nth-child(3) {
+  width: 120px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+.class-manage-item :nth-child(4) {
+  width: 420px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+.class-manage-item :nth-child(4) > div {
+  width: 380px;
+}
+
+.class-manage-item :nth-child(5) {
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+
+.class-manage-item :nth-child(6) {
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}
+.class-manage-item :nth-child(7) {
+  width: 200px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1d;
+  display: flex;
+  align-items: center;
+}

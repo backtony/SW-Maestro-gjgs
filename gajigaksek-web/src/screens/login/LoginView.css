@@ -1,0 +1,73 @@
+@import "../../utils/commonStyles.css";
+
+.login-container {
+  /* background: url("https://images.unsplash.com/photo-1485546784815-e380f3297414?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"); */
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-img {
+  z-index: -1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.login-inner-container {
+  position: absolute;
+}
+
+.login-button {
+  width: 460px;
+  height: 60px;
+  margin: 60px 0 0;
+  padding: 10px 108px;
+  border-radius: 10px;
+  background-color: #fee500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button > div {
+  width: 194px;
+  height: 24px;
+  margin: 8px 0 8px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -0.48px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.login-title-container {
+}
+
+.login-title-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.login-big-title {
+  font-size: 80px;
+  line-height: 1;
+  margin-right: 20px;
+  color: white;
+}
+
+.login-small-title {
+  font-size: 30px;
+  color: white;
+}
+
+/* .button-container {
+  position: relative;
+} */

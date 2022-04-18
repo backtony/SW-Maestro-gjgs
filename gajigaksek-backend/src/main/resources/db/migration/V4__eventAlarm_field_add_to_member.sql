@@ -1,0 +1,1 @@
+ALTER TABLE `member` ADD `event_alarm` BIT(1) NOT NULL;

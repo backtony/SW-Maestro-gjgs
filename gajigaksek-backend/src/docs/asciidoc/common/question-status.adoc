@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[bulletin-enums]]
+== 질문글의 상태
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-questionStatus']

@@ -1,0 +1,33 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+
+[[Matching]]
+= Matching API
+
+[[Matching-상태]]
+== 매칭 상태
+operation::matching-controller-test/get_matching_status[snippets='http-request,request-headers,http-response,response-fields']
+
+
+[[Matching-매칭-신청]]
+== 매칭 신청
+operation::matching-controller-test/success_matching[snippets='http-request,request-headers,request-fields,http-response']
+
+=== 취미 카테고리 ID가 존재하지 않을 경우
+operation::matching-controller-test/matching_should_exist_category_id[snippets='http-response']
+
+=== 지역 ID가 존재하지 않을 경우
+operation::matching-controller-test/matching_should_exist_zone_id[snippets='http-response']
+
+=== 제약 조건을 지키지 않을 경우
+operation::matching-controller-test/matching-form_valid_all_fail[snippets='http-response']
+
+[[Matching-매칭-취소]]
+== 매칭 취소
+operation::matching-controller-test/cancel_matching[snippets='http-request,request-headers,http-response']

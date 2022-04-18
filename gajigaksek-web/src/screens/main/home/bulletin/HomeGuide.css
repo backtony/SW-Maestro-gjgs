@@ -1,0 +1,56 @@
+.home-guide-container {
+  width: 370px;
+  padding: 0 40px 40px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-guide-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: #1d1d1f;
+
+  margin-bottom: 20px;
+}
+
+.home-guide-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-guide-button {
+  width: 290px;
+  height: 44px;
+  margin: 0 0 10px 0;
+  /* padding: 13px 90px; */
+  border-radius: 10px;
+  border: solid 1px #4f6cff;
+
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #4f6cff;
+}
+
+.home-guide-icon {
+  margin-right: 8px;
+}
+
+.home-guide-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+}

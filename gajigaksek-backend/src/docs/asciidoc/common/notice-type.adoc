@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[notice-type-enums]]
+== 공지사항을 볼 수 있는 대상
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-noticeType']

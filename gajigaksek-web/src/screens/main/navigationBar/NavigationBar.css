@@ -1,0 +1,38 @@
+.navigation-bar {
+  /* background-color: red; */
+  width: 300px;
+  height: 100%;
+}
+
+.navigation-title-wrapper {
+  /* background-color: rosybrown; */
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-title-wrapper > button {
+  font-size: 26.7px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: -1.07px;
+  text-align: center;
+  color: #4f6cff;
+  background-color: transparent;
+}
+
+.navi-button-list {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  transition: all 0.5s ease;
+}
+.navi-button-list-on {
+  opacity: 1;
+  height: 300px;
+  transition: all 0.5s ease;
+  transform: translateY(0);
+}

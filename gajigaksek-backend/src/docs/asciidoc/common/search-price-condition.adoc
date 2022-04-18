@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[bulletin-enums]]
+== 클래스 검색 시 가격
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-searchPriceCondition']

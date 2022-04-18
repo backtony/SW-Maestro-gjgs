@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[lecture-save-delete-status-enums]]
+== 클래스의 생성 및 삭제 여부 enum
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-lectureSaveDeleteResponse']

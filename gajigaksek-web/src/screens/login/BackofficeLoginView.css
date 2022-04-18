@@ -1,0 +1,22 @@
+.backoffice-login-title {
+  font-size: 100px;
+  color: white;
+}
+
+.backoffice-login-id-wrapper > div {
+  color: white;
+  font-size: 50px;
+}
+
+.backoffice-login-id-wrapper > input {
+  height: 50px;
+  width: 300px;
+  font-size: 50px;
+}
+
+.backoffice-login-button {
+  height: 50px;
+  width: 300px;
+  font-size: 50px;
+  margin-top: 10px;
+}

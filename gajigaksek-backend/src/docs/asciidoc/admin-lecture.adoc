@@ -1,0 +1,28 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Admin-Lecture]]
+= Admin-Lecture API
+
+[[Confirm-Lecture-조회]]
+== 검수 대기중인 클래스 조회
+operation::admin-lecture-controller-test/get_confirm_lectures[snippets='http-request,request-headers,http-response,response-fields']
+
+[[Confirm-Lecture-상세조회]]
+== 검수 대기중인 클래스 상세 조회
+operation::admin-lecture-controller-test/get_confirm_lecture[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Confirm-Lecture-승인-거절]]
+== 검수 대기중인 클래스 승인 및 거절
+operation::admin-lecture-controller-test/accept_lecture[snippets='http-request,request-headers,path-parameters,http-response']
+
+=== 거절 사유를 적지 않을 경우
+operation::admin-lecture-controller-test/reject_lecture_should_write_reject_reason[snippets='http-response']
+
+=== 거절 사유가 10자 미만일 경우
+operation::admin-lecture-controller-test/reject_lecture_should_min_10_length_reject_reason[snippets='http-response']

@@ -1,0 +1,98 @@
+.myclass-item {
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  align-items: center;
+}
+.myclass-item > div > img {
+  width: 200px;
+  height: 160px;
+  border-radius: 6.7px;
+}
+.myclass-img-blocker {
+  width: 200px;
+  height: 160px;
+  border-radius: 6.7px;
+  background-color: red;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: -165px;
+}
+
+.myclass-img-wrapper {
+  height: 160px;
+}
+
+.myclass-item-contents {
+  height: 160px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.myclass-item-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.myclass-item-button {
+  color: #4f6cff;
+  display: flex;
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.myclass-item-button > div {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #4f6cff;
+
+  margin-right: 8px;
+}
+
+.myclass-item-contents > button {
+  width: 143px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myclass-item-contents > button > div {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.myclass-item-reject-text1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

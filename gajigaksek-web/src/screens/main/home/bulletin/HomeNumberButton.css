@@ -1,0 +1,38 @@
+.home-page-number {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  padding: 4px 0;
+  border-radius: 16px;
+
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8e8e8f;
+  margin: 0px 10px 0 10px;
+
+  background-color: transparent;
+}
+
+.home-page-number-on {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  padding: 4px 0;
+  border-radius: 16px;
+  background-color: #4f6cff;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+}

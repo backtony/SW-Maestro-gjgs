@@ -1,0 +1,59 @@
+.class-add-schedule-header {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.class-add-schedule-time-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.class-add-schedule-time-select-container {
+  display: flex;
+}
+
+.class-add-schedule-time-select-container > select {
+  width: 100px;
+  height: 44px;
+  padding: 12px 10px 12px 20px;
+  border-radius: 10px;
+  background-color: #f9f9fa;
+  margin-top: 10px;
+  border-width: 0px;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.class-add-schedule-button {
+  width: 600px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #4f6cff;
+
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.class-add-schedule-button > div {
+  margin-left: 8px;
+}

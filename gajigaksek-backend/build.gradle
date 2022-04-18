@@ -1,0 +1,220 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+
+    // restdocs
+    id "org.asciidoctor.jvm.convert" version "3.3.2"
+
+    // jacoco
+    id "jacoco"
+}
+
+// querydsl
+apply plugin: "io.spring.dependency-management"
+
+group = 'com.gjgs'
+version = '1.0'
+sourceCompatibility = '11'
+
+configurations {
+    asciidoctorExtensions // restdocs
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+
+    // iamport
+    maven { url 'https://jitpack.io' }
+}
+
+ext {
+    snippetsDir = file('build/generated-snippets')
+}
+
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    compileOnly 'org.projectlombok:lombok'
+    implementation 'org.projectlombok:lombok:1.18.18'
+    annotationProcessor 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+
+    runtimeOnly 'com.h2database:h2'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    // restdocs
+    asciidoctorExtensions 'org.springframework.restdocs:spring-restdocs-asciidoctor'
+    testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
+
+    // aws
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.6.RELEASE'
+
+    // jwt
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.11.2'
+    implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.11.2'
+    runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.11.2'
+
+    // redis
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '2.3.4.RELEASE'
+
+    // embedded redis for test
+    testImplementation group: 'it.ozimov', name: 'embedded-redis', version: '0.7.2'
+
+    // querydsl
+    implementation("com.querydsl:querydsl-core")
+    implementation("com.querydsl:querydsl-jpa")
+    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jpa"
+    annotationProcessor("jakarta.persistence:jakarta.persistence-api")
+    annotationProcessor("jakarta.annotation:jakarta.annotation-api")
+
+    // mysql
+    runtimeOnly 'mysql:mysql-connector-java'
+
+    // mockito final class error
+    testImplementation group: 'org.mockito', name: 'mockito-inline', version: '3.8.0'
+
+    // query log
+    implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.7.1'
+
+    // fcm
+    implementation group: 'com.google.firebase', name: 'firebase-admin', version: '8.0.1'
+
+
+    // iamport
+    implementation 'com.github.iamport:iamport-rest-client-java:0.2.15'
+
+    // elasticsearch
+    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+    testImplementation "org.testcontainers:elasticsearch:1.16.0"
+
+    // flyway
+    implementation 'org.flywaydb:flyway-core'
+}
+
+test {
+    outputs.dir snippetsDir
+    useJUnitPlatform()
+    finalizedBy 'jacocoTestReport'
+}
+
+// restdocs
+asciidoctor {
+    dependsOn test
+    configurations 'asciidoctorExtensions'
+    inputs.dir snippetsDir
+
+    sources{
+        include("**/*.adoc","**/common/*.adoc")
+    }
+
+    baseDirFollowsSourceFile()
+}
+
+
+task copyDocument(type: Copy) {
+    dependsOn asciidoctor
+    from file("build/docs/asciidoc")
+    into file("src/main/resources/static/docs")
+}
+
+
+build {
+    dependsOn copyDocument
+}
+
+
+// query dsl
+def generated='src/main/generated'
+sourceSets {
+    main.java.srcDirs += [ generated ]
+}
+
+tasks.withType(JavaCompile) {
+    options.annotationProcessorGeneratedSourcesDirectory = file(generated)
+}
+
+clean.doLast {
+    file(generated).deleteDir()
+}
+
+
+// jacoco
+jacoco {
+    toolVersion = '0.8.7'
+}
+
+jacocoTestReport {
+    reports {
+        html.enabled true
+        xml.enabled false
+        csv.enabled false
+    }
+    def Qdomains = []
+    for(qPattern in "**/QA" .. "**/QZ"){
+        Qdomains.add(qPattern+"*")
+    }
+
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it,
+                    exclude: [
+                            'com/gjgs/gjgs/dummy/**',
+                            'com/gjgs/gjgs/health/**',
+                            'com/gjgs/gjgs/infra/**',
+                            '**/*exception*',
+                            '**/*GjgsApplication*',
+                            '**/*Request*',
+                            '**/*Response*',
+                            '**/*Dto*'
+                    ] + Qdomains)
+        }))
+    }
+
+    finalizedBy 'jacocoTestCoverageVerification'
+}
+
+jacocoTestCoverageVerification {
+    def Qdomains = []
+    for (qPattern in "*.QA".."*.QZ") {  // qPattern = "*.QA","*.QB","*.QC", ... "*.QZ"
+        Qdomains.add(qPattern + "*")
+    }
+
+    violationRules {
+        rule {
+            element = 'CLASS'
+            limit {
+                enabled = false
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.80
+            }
+            limit {
+                enabled = false
+                counter = 'BRANCH'
+                value = 'COVEREDRATIO'
+                minimum = 0.80
+            }
+            excludes = [
+                    'com.gjgs.gjgs.dummy.**',
+                    'com.gjgs.gjgs.health.**',
+                    'com.gjgs.gjgs.infra.**',
+                    '*.*Exception*',
+                    '*.*ErrorCodes*',
+                    '*.*GjgsApplication*',
+                    '*.*Request*',
+                    '*.*Response*',
+                    '*.*Dto*',
+            ] + Qdomains
+        }
+    }
+}

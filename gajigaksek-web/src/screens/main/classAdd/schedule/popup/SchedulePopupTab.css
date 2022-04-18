@@ -1,0 +1,23 @@
+.class-add-schedule-popup-tab {
+  width: 79px;
+  height: 32px;
+  padding: 7px 12px;
+  margin-right: 10px;
+  border-radius: 6px;
+  background-color: rgba(245, 245, 247, 0.6);
+
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.class-add-schedule-popup-tab-on {
+  background-color: #4f6cff;
+  color: white;
+  font-weight: bold;
+}

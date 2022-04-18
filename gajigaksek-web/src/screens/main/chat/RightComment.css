@@ -1,0 +1,29 @@
+.right-comment-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.right-comment-time {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: right;
+  color: #8e8e8f;
+}
+
+.right-comment-bubble {
+  background-color: #4f6cff;
+  padding: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  margin-left: 20px;
+
+  color: white;
+}

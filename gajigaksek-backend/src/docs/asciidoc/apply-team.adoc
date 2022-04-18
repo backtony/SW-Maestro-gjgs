@@ -1,0 +1,36 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Apply-Team]]
+= Apply-Team API
+
+[[Apply-Team]]
+== 팀 신청
+operation::apply-team-schedule-controller-test/apply_team[snippets='http-request,request-headers,path-parameters,request-fields,http-response,response-fields']
+
+=== 팀 신청, 팀원 중 이미 신청한 팀원이 있을 경우
+operation::apply-team-schedule-controller-test/apply_team_should_not_exist_previous_apply_member[snippets='http-response']
+
+=== 팀 신청, 팀원 신청한 클래스의 디렉터가 있을 경우
+operation::apply-team-schedule-controller-test/apply_team_should_not_member_is_own_lecture[snippets='http-response']
+
+=== 팀 신청, teamId와 lectureId를 입력하지 않았을 경우
+operation::apply-team-schedule-controller-test/apply_team_should_not_null_team_id_lecture_id[snippets='http-response']
+
+=== 팀 신청, 스케줄 참가 인원을 초과할 경우
+operation::apply-team-schedule-controller-test/apply_team_should_not_over_participants[snippets='http-response']
+
+=== 팀 신청, 모집중인 스케줄이 아닐 경우
+operation::apply-team-schedule-controller-test/apply_team_should_schedule_status_is_recruit[snippets='http-response']
+
+=== 팀 신청, 팀 신청은 스케줄 진행 한시간 신청해야만 한다.
+operation::apply-team-schedule-controller-test/apply_team_should_team_apply_before_one_hour[snippets='http-response']
+
+[[Apply-Team-취소]]
+== 팀 신청 취소하기
+operation::apply-team-schedule-controller-test/delete_apply_team[snippets='http-request,request-headers,path-parameters,http-response']

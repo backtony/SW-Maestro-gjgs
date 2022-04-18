@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[bulletin-enums]]
+== 권한 타입
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-authority']

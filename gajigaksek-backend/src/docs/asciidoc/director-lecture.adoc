@@ -1,0 +1,77 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+
+[[Director-Lecture]]
+= Director-Lecture API
+
+[[Director-Lecture-클래스-조회]]
+== 디렉터가 진행하는 모든 클래스 조회
+operation::director-lecture-controller-test/get_director_lectures[snippets='http-request,request-headers,request-parameters,http-response,response-fields']
+
+[[Director-Lecture-클래스-검수-거절된-클래스-삭제]]
+== 검수 거절된 클래스 삭제하기
+operation::director-lecture-controller-test/delete_reject_lecture[snippets='http-request,request-headers,path-parameters,http-response']
+
+=== reject된 클래스가 없을 경우
+operation::director-lecture-controller-test/delete_reject_lecture_not_found[snippets='http-response']
+
+[[Director-Lecture-클래스-검수-거절된-클래스-재작성]]
+== 검수 거절된 클래스 재작성하기
+operation::director-lecture-controller-test/rewrite_lecture[snippets='http-request,request-headers,path-parameters,http-response']
+
+=== 작성중인 클래스가 존재할 경우
+operation::director-lecture-controller-test/rewrite_lecture_should_not_exist_creating_lecture[snippets='http-response']
+
+[[Director-Lecture-클래스-스케줄-조회]]
+== 디렉터가 진행하는 모든 클래스의 스케줄 조회
+operation::director-lecture-controller-test/get_director_lectures_schedules[snippets='http-request,request-headers,response-body,response-fields']
+
+=== 디렉터가 진행하는 모든 클래스의 스케줄 조회 / keyword가 공백일 경우
+operation::director-lecture-controller-test/get_director_lectures_schedules_should_not_blank_keyword[snippets='http-request,http-response']
+
+=== 디렉터가 진행하는 모든 클래스의 스케줄 조회 / 날짜 형식이 yyyy-MM-dd가 아닌 경우
+operation::director-lecture-controller-test/get_director_schedules_not_yyyymmdd[snippets='http-response']
+
+[[Director-Lecture-클래스-문의글]]
+== 디렉터가 진행하는 모든 클래스의 문의글들 가져오기
+operation::director-lecture-controller-test/get_director_questions[snippets='http-request,request-headers,request-parameters,http-response,response-fields']
+
+[[Director-Lecture-클래스-스케줄]]
+== 디렉터가 진행하는 지정 클래스의 스케줄들 가져오기
+operation::director-lecture-controller-test/get_lecture_schedules[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Director-Lecture-클래스-스케줄]]
+== 스케줄 추가하기
+operation::director-lecture-controller-test/add_schedule[snippets='http-request,request-headers,path-parameters,request-fields,http-response,response-fields']
+
+=== 제약 조건을 지키지 않을 경우
+operation::director-lecture-controller-test/add_schedule_should_follow_constraint[snippets='http-response']
+
+[[Director-Lecture-클래스-스케줄-삭제]]
+== 스케줄 삭제
+operation::director-lecture-controller-test/delete_schedule[snippets='http-request,request-headers,path-parameters,response-body,response-fields']
+
+=== 해당 스케줄에 참가자가 있을 경우
+operation::director-lecture-controller-test/delete_schedule_should_not_exist_participants[snippets='http-response']
+
+[[Director-Lecture-클래스-쿠폰-조회]]
+== 내가 만든 클래스들의 쿠폰 조회
+operation::director-lecture-controller-test/get_director_coupon[snippets='http-request,request-headers,http-response,response-fields']
+
+[[Director-Lecture-클래스-쿠폰-발행-및-재발행하기]]
+== 내가 만든 클래스의 쿠폰 발행 및 재발행
+operation::director-lecture-controller-test/issue_coupon[snippets='http-request,request-headers,path-parameters,request-body,http-response']
+
+=== 아직 발급 가능한 쿠폰들이 남아있을 경우
+operation::director-lecture-controller-test/issue_coupon_should_not_remain_coupon[snippets='http-response']
+
+[[Director-Lecture-클래스-쿠폰-발행-중지하기]]
+== 쿠폰 발급 중지하기
+operation::director-lecture-controller-test/stop_issue_coupon[snippets='http-request,request-headers,path-parameters,http-response']
+

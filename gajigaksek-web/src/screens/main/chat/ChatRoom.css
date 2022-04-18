@@ -1,0 +1,42 @@
+.chat-wrapper {
+  width: 800px;
+  height: 1000px;
+}
+
+.chat-scrollView {
+  height: 940px;
+  overflow-y: scroll;
+}
+
+.chat-bottom {
+  height: 60px;
+}
+
+.chat-input-wrapper > input {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #383f66;
+
+  margin-left: 20px;
+
+  width: 450px;
+}
+
+.chat-send-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #4f6cff;
+  margin: 10px;
+  color: white;
+}
+
+.chat-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

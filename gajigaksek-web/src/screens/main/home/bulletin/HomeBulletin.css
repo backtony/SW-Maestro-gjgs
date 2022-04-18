@@ -1,0 +1,44 @@
+.home-bulletin-container {
+  width: 1150px;
+  height: 580px;
+  margin: 20px 20px 40px 40px;
+  border-radius: 11px;
+}
+
+.home-bulletin-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.home-bulletin-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1540px;
+}
+
+.home-page-navigation {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.home-page-text {
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8e8e8f;
+  margin: 0px 14px 0 14px;
+}
+
+.home-page-button {
+  background-color: transparent;
+}

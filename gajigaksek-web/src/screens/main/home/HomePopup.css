@@ -1,0 +1,185 @@
+.home-popup-container {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.home-popup-container-on {
+  display: flex;
+}
+
+.home-popup {
+  width: 600px;
+  height: 500px;
+  margin: 240px 250px 240px 360px;
+  padding: 40px 40px 120px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.home-popup-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.home-popup-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.home-popup-img-container > img {
+  width: 160px;
+  height: 160px;
+  border: solid 2px #ececec;
+  border-radius: 100px;
+}
+
+.home-popup-img-button {
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  background-color: #4f6cff;
+  color: white;
+  border-radius: 40px;
+  position: relative;
+  left: -40px;
+  top: -15px;
+}
+
+.home-popup-img-container {
+}
+
+.home-popup-exit {
+  background-color: transparent;
+}
+
+.home-popup-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.home-popup-img-input {
+  display: none;
+}
+
+.home-popup-nickname-input-wrapper {
+  width: 320px;
+  height: 44px;
+  padding: 0px 10px 0px 13px;
+  border-radius: 6px;
+  background-color: rgba(245, 245, 247, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-popup-nickname-input {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.home-popup-edit-button {
+  width: 65px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #4f6cff;
+
+  font-size: 12px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.home-popup-nickname-title {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.home-popup-intro-title {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.home-popup-intro-textarea-wrapper {
+  width: 320px;
+  height: 184px;
+  margin: 10px 0 0;
+  padding: 12px 13px;
+  border-radius: 6px;
+  background-color: rgba(245, 245, 247, 0.6);
+}
+
+.home-popup-intro-textarea {
+  background-color: transparent;
+
+  width: 294px;
+  height: 160px;
+
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.home-popup-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.home-popup-button {
+  width: 520px;
+  height: 44px;
+  padding: 12px 245px;
+  border-radius: 10px;
+  background-color: #4f6cff;
+
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #fff;
+}

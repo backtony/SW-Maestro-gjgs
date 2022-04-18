@@ -1,0 +1,22 @@
+.myclass-header {
+  font-size: 32px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.myclass-container {
+  padding: 40px;
+}
+
+.myclass-list-wrapper {
+  margin-top: 58px;
+}
+
+.myclass-splitor {
+  height: 1px;
+  background-color: #eee;
+}

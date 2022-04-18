@@ -1,0 +1,28 @@
+.myclass-header-button {
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+.myclass-header-button-title {
+  margin: 10px 10px 18px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.myclass-header-button-indicator {
+  height: 4px;
+  background-color: transparent;
+}
+
+.myclass-header-button-on-color {
+  color: #4f6cff;
+}
+
+.myclass-header-button-on-background {
+  background-color: #4f6cff;
+}

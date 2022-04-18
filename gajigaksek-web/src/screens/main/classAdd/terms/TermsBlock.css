@@ -1,0 +1,38 @@
+.class-add-terms-checkbox {
+  width: 28px;
+  height: 28px;
+  /* margin: 0 10px 20px 0; */
+  object-fit: contain;
+  background-color: #4f6cff;
+}
+
+.class-add-terms-title-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.class-add-terms-title-wrapper > div {
+  margin-left: 10px;
+}
+
+.class-add-terms-text-wrapper {
+  width: 760px;
+  height: 240px;
+  margin: 20px 0 0;
+  border-radius: 10px;
+  background-color: rgba(245, 245, 247, 0.6);
+}
+
+.class-add-terms-text-wrapper > textarea {
+  width: 720px;
+  height: 200px;
+  margin: 20px;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #8e8e8f;
+}

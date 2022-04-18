@@ -1,0 +1,24 @@
+.class-add-general-button {
+  width: 140px;
+  height: 40px;
+  margin: 0px 10px 10px 0px;
+  padding: 0 0 0 20px;
+  border-radius: 8px;
+  background-color: #f5f5f7;
+
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #1d1d1f;
+
+  text-align: left;
+}
+
+.class-add-general-button-on {
+  background-color: #4f6cff;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,50 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Bulletin]]
+= Bulletin API
+
+[[Bulletin-생성]]
+== Bulletin 생성
+operation::bulletin-controller-test/create_bulletin[snippets='http-request,request-headers,request-fields,http-response,response-fields']
+
+=== 모든 값에 대해 입력하지 않을 경우
+operation::bulletin-controller-test/create_bulletin_should_not_null_required_attribute_validation[snippets='http-response']
+
+=== 제목과 소개글을 지정된 길이에 맞춰 입력하지 않을 경우
+operation::bulletin-controller-test/create_bulletin_should_text_length_size_minimum[snippets='http-response']
+
+=== 시간, 나이, 요일 형식이 맞지 않은 값이 올 경우
+operation::bulletin-controller-test/create_bulletin_should_follow_constraint_time_age_value[snippets='http-response']
+
+=== 지정한 클래스를 찾을 수 없을 경우
+operation::bulletin-controller-test/create_bulletin_should_pick_lecture[snippets='http-response']
+
+[[Bulletin-삭제]]
+== Bulletin 삭제(모집 해제)
+operation::bulletin-controller-test/delete_bulletin[snippets='http-request,request-headers,http-response,response-fields']
+
+[[Bulletin-수정]]
+== Bulletin 수정
+operation::bulletin-controller-test/update_bulletin[snippets='http-request,request-headers,request-fields,http-response,response-fields']
+
+== Bulletin을 모집 상태로 변경하기
+operation::bulletin-controller-test/update_bulletin_change_status[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+=== Bulletin을 작성한 팀의 인원이 다 찼을 경우
+operation::bulletin-controller-test/update_bulletin_should_not_team_members_full[snippets='http-response']
+
+[[Bulletin-조회]]
+== Bulletin 검색하기
+operation::bulletin-controller-test/read_bulletin[snippets='http-request,request-headers,http-response,response-fields']
+
+=== 키워드가 빈 문자열일 경우 에러 발생
+operation::bulletin-controller-test/get_bulletin_should_not_keyword_is_not_blank[snippets='http-response']
+
+== Bulletin 상세 조회
+operation::bulletin-controller-test/get_bulletin_detail[snippets='http-request,request-headers,path-parameters,http-response,response-fields']

@@ -1,0 +1,16 @@
+.main-container {
+  display: flex;
+}
+
+.main-main {
+  /* background-color: blue; */
+  width: 1600px;
+  height: 100%;
+}
+
+.main-separator {
+  width: 1px;
+  height: 1080px;
+  margin: 0 0 0 19px;
+  background-color: #eee;
+}

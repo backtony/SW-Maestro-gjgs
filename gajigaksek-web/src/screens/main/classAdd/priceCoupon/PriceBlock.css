@@ -1,0 +1,65 @@
+.class-add-price-coupon-price-item {
+  margin-right: 20px;
+}
+
+.class-add-price-coupon-price-item-title {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+  margin-top: 20px;
+}
+
+.class-add-price-coupon-price-item-subtitle {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #4f6cff;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.class-add-price-coupon-price-item-title-wrapper {
+  display: flex;
+}
+
+.class-add-price-coupon-price-item-price-wrapper {
+  width: 240px;
+  height: 44px;
+  border-radius: 10px;
+  background-color: #f9f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.class-add-price-coupon-price-item-price-wrapper > input {
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  margin-left: 20px;
+}
+
+.class-add-price-coupon-price-item-price-wrapper > div {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: right;
+  color: #1d1d1f;
+  margin-right: 20px;
+}

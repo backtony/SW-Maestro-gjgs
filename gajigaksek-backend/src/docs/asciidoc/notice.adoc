@@ -1,0 +1,52 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Notice]]
+= Notice API
+
+[[Notice-생성]]
+== 공지사항 생성
+operation::notice-controller-test/create_notice[snippets='http-request,request-headers,request-fields,http-response']
+
+=== 어드민 권한이 없을 경우
+operation::notice-controller-test/common_errors_forbidden[snippets='http-response']
+
+[[Notice-조회]]
+== 공지사항 전체 조회
+operation::notice-controller-test/get_notices[snippets='http-request,request-parameters,response-body,response-fields']
+
+=== 권한이 없을 경우
+operation::notice-controller-test/common_errors_forbidden[snippets='http-response']
+
+[[Notice-디렉터-조회]]
+== 디렉터의 공지사항 조회, (response는 전체 조회와 동일)
+operation::notice-controller-test/get_notices_director[snippets='http-request,request-parameters']
+
+=== 디렉터 권한이 없을 경우
+operation::notice-controller-test/common_errors_forbidden[snippets='http-response']
+
+[[Notice-상세-조회]]
+== 공지사항 상세 조회
+operation::notice-controller-test/get_notice[snippets='path-parameters,response-body,response-fields']
+
+=== 권한이 없을 경우
+operation::notice-controller-test/common_errors_forbidden[snippets='http-response']
+
+[[Notice-수정]]
+== 공지사항 수정
+operation::notice-controller-test/update_notice[snippets='http-request,path-parameters,request-fields']
+
+=== Admin 권한이 없을 경우
+operation::notice-controller-test/delete_notice_forbidden[snippets='http-response']
+
+[[Notice-삭제]]
+== 공지사항 삭제
+operation::notice-controller-test/delete_notice[snippets='http-request,path-parameters']
+
+=== Admin 권한이 없을 경우
+operation::notice-controller-test/delete_notice_forbidden[snippets='http-response']

@@ -1,0 +1,67 @@
+.class-add-intro-input-wrapper {
+  width: 500px;
+  height: 200px;
+  padding: 11px 821px 167px 20px;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+}
+
+.class-add-intro-input {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #8e8e8f;
+
+  background-color: transparent;
+
+  width: 480px;
+}
+
+.class-add-intro-img-container {
+  display: flex;
+}
+
+.class-add-intro-img-wrapper {
+  width: 262px;
+  height: 160px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.class-add-intro-bottom-left {
+  width: 100px;
+  height: 44px;
+  margin: 17px 10px 0 0;
+  padding: 12px 36px;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.class-add-intro-img-text {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+
+  background-color: transparent;
+
+  width: 262px;
+}
+
+.saramsalrye {
+  height: 400px;
+}

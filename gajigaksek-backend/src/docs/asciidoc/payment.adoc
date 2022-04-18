@@ -1,0 +1,53 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Payment]]
+= Payment API
+
+[[Common-Error]]
+== 공통적으로 발생할 수 있는 에러
+
+=== 결제 타입이 없을 경우
+operation::payment-controller-test/common_exception_not_found_pay_type[snippets='response-body']
+
+=== 마감 시간을 지키지 않고 신청할 경우
+operation::payment-controller-test/common_exception_not_valid_close_time[snippets='response-body']
+
+=== 아임포트 관련 에러
+operation::payment-controller-test/common_exception_iamport[snippets='response-body']
+
+=== 유저가 할인 적용된 결제 금액이 맞지 않을 경우
+operation::payment-controller-test/common_exception_not_found_pay_type[snippets='response-body']
+
+[[Payment-조회]]
+== 팀 신청시 결제 내역 조회하기
+operation::payment-controller-test/get_team_members_payment[snippets='http-request,request-headers,path-parameters,response-body,response-fields']
+
+[[Payment-결제]]
+== 클래스를 신청한 멤버의 결제
+operation::payment-controller-test/pay_team_member[snippets='http-request,request-headers,path-parameters,request-fields,response-body,response-fields']
+
+=== 신청한 클래스 ID를 입력하지 않은 경우
+operation::payment-controller-test/pay_team_member_should_input_lecture_id[snippets='response-body']
+
+[[Payment-검증]]
+== 결제 검증하기
+operation::payment-controller-test/verify_payment[snippets='http-request,request-headers,path-parameters,request-fields,response-body,response-fields']
+
+=== 결제 금액이 검증되지 않아 자동 취소 될 경우
+operation::payment-controller-test/verify_payment_auto_cancel[snippets='response-body']
+
+=== 주문 ID와 아임포트에서 받은 UID가 없을 경우
+operation::payment-controller-test/verify_payment_should_input_order_id_and_iamport_uid[snippets='response-body']
+
+[[Payment-취소]]
+== 결제 취소하기
+operation::payment-controller-test/cancel_payment[snippets='http-request,request-headers,path-parameters,http-response']
+
+=== 결제 수동 취소시 신청한 클래스가 3일 이내에 시작될 경우
+operation::payment-controller-test/cancel_payment_should_not_cancel_under_three_days[snippets='response-body']

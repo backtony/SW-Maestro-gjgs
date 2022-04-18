@@ -1,0 +1,67 @@
+= 가지각색 API 문서
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+
+include::overview.adoc[]
+
+[[API-List]]
+== APIs
+
+=== Member API
+* link:login.html[로그인 API, window=_blank]
+
+* link:my-info-edit.html[회원 정보 수정 API, window=_blank]
+
+* link:my-page.html[마이페이지 API, window=_blank]
+
+* link:member-search.html[회원 검색 API, window=_blank]
+
+=== Team API
+* link:team.html[팀의 기본 CRUD API, window=_blank]
+
+* link:team-manage.html[팀원들을 관리하는 API, window=_blank]
+
+=== Bulletin API
+* link:bulletin.html[모집글 관련 API, window=_blank]
+
+=== Favorite API
+* link:favorite.html[찜 관련 API, window=_blank]
+
+=== Matching API
+* link:matching.html[매칭 관련 API, window=_blank]
+
+=== Lecture API
+* link:lecture-query.html[클래스 찾기 관련 API, window=_blank]
+
+* link:admin-lecture.html[어드민이 사용하는 클래스 관련 API, window=_blank]
+
+* link:director-lecture.html[디렉터가 사용하는 클래스 관련 API, window=_blank]
+
+* link:temporary-store-lecture.html[클래스 임시 저장 API, window=_blank]
+
+=== Apply-Team API
+* link:apply-team.html[팀의 클래스 신청 API, window=_blank]
+
+=== Review API
+* link:review.html[리뷰 API, window=_blank]
+
+=== Member-Coupon API
+* link:member-coupon.html[회원이 발급받은 쿠폰 API, window=_blank]
+
+=== Payment API
+* link:payment.html[결제 API, window=_blank]
+
+=== Question API
+* link:question.html[질문글 API, window=_blank]
+
+=== Notice API
+* link:notice.html[공지사항 API, window=_blank]
+
+=== Notification API
+* link:notification.html[알림 API, window=_blank]

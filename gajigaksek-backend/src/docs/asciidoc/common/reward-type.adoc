@@ -1,0 +1,5 @@
+:doctype: book
+:icons: font
+
+[[reward-enums]]
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-rewardType']

@@ -1,0 +1,79 @@
+.class-add-price-coupon-price-list {
+  display: flex;
+}
+
+.class-add-price-coupon-coupon-title {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+  margin-bottom: 10px;
+}
+
+.class-add-price-coupon-coupon-input-wrapper {
+  width: 316px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: rgba(245, 245, 247, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.class-add-price-coupon-coupon-input-wrapper > button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #4f6cff;
+  color: #fff;
+}
+
+.class-add-price-coupon-coupon-input-wrapper > input {
+  width: 150px;
+  background-color: transparent;
+}
+
+.wtf-coupon {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: black;
+}
+
+.class-add-price-coupon-coupon-price-wrapper {
+  width: 200px;
+  height: 44px;
+  border-radius: 6px;
+  background-color: rgba(245, 245, 247, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-add-price-coupon-coupon-price-wrapper > input {
+  background-color: transparent;
+}
+
+.class-add-price-coupon-coupon-wrapper {
+  margin-bottom: 30px;
+}
+
+.fucking-info {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  margin-top: 30px;
+}

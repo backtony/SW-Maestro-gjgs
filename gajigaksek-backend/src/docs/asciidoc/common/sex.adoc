@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[Sex-enums]]
+== 성별
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-sex']

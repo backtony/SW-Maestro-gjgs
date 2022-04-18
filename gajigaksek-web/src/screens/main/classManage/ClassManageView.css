@@ -1,0 +1,129 @@
+.class-manage-wrapper {
+  margin-bottom: 20px;
+}
+
+.mmm {
+  margin-bottom: 40px;
+}
+
+.class-manage-block {
+  display: flex;
+  align-items: center;
+}
+
+.dkdk {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.class-manage-list-header {
+  margin-top: 40px;
+  display: flex;
+}
+
+.class-manage-list-header > div > div {
+  margin-left: 20px;
+}
+
+.class-manage-list-header :nth-child(1) {
+  width: 100px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  display: flex;
+  align-items: center;
+}
+
+.class-manage-list-header :nth-child(2) {
+  width: 300px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  display: flex;
+  align-items: center;
+}
+
+.class-manage-list-header :nth-child(3) {
+  width: 120px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  display: flex;
+  align-items: center;
+}
+.class-manage-list-header :nth-child(4) {
+  width: 420px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  display: flex;
+  align-items: center;
+}
+
+.class-manage-list-header :nth-child(5) {
+  width: 200px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  display: flex;
+  align-items: center;
+}
+
+.class-manage-list-header :nth-child(6) {
+  width: 200px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  display: flex;
+  align-items: center;
+}
+.class-manage-list-header :nth-child(7) {
+  width: 200px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  display: flex;
+  align-items: center;
+}

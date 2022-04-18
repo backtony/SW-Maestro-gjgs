@@ -1,0 +1,27 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Notification]]
+= Notification API
+
+[[Notification-발송]]
+== 알림 보내기
+operation::notification-controller-test/send_notification[snippets='http-request,request-headers,request-fields,http-response']
+
+=== ADMIN 권한이 없을 경우
+operation::common-doc-controller-test/have_not_admin_authorization_sample[snippets='http-response']
+
+=== 알림을 보낼 때 제약 조건을 지키지 않을 경우
+operation::notification-controller-test/send_notification_should_follow_constraints[snippets='response-body']
+
+[[Notification-읽기]]
+== 알림 읽기
+operation::notification-controller-test/read_notification_read[snippets='http-request,request-headers,path-parameters,http-response']
+
+=== 권한이 없을 경우
+operation::notification-controller-test/read_notification_unauthorized_exception[snippets='http-response']

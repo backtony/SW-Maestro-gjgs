@@ -1,0 +1,45 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Lecture-Query]]
+= Lecture-Query API (유저들의 클래스 조회)
+
+[[Lecture-조회]]
+== 클래스 검색(검수 완료된 클래스들)
+operation::lecture-query-controller-test/get_lectures[snippets='http-request,request-parameters,response-body,response-fields']
+
+=== 클래스 검색 시 키워드가 공백일 경우
+operation::lecture-query-controller-test/get_lectures_should_not_keyword_is_blank[snippets='response-body']
+
+=== 클래스 검색 시 엘라스틱서치 관련 에러가 발생할 경우
+operation::lecture-query-controller-test/get_lectures_should_run_elasticsearch[snippets='response-body']
+
+[[Lecture-추천]]
+== 추천 클래스(메인 페이지, 클래스 상세 조회)
+operation::lecture-query-controller-test/get_recommend_lectures[snippets='http-request,request-parameters,response-body,response-fields']
+
+[[Lecture-상세-조회]]
+== 클래스 상세 조회
+operation::lecture-query-controller-test/get_lecture[snippets='http-request,path-parameters,http-response,response-fields']
+
+[[Lecture-찜한-모집글들-조회]]
+== 클래스를 찜한 모집글들 조회
+operation::lecture-query-controller-test/get_lecture_favorite_bulletins[snippets='http-request,path-parameters,http-response,response-fields']
+
+[[Lecture-질문글-조회]]
+== 클래스의 질문글 조회
+operation::lecture-query-controller-test/get_lecture_questions[snippets='http-request,path-parameters,http-response,response-fields']
+
+[[Lecture-리뷰들-조회]]
+== 클래스에 남긴 리뷰 조회
+operation::lecture-query-controller-test/get_lecture_reviews[[snippets='http-request,path-parameters,http-response,response-fields']
+
+[[Lecture-디렉터의-클래스-조회]]
+== 디렉터가 운영하는 클래스 조회
+operation::lecture-query-controller-test/get_director_lectures[snippets='http-request,path-parameters,http-response,response-fields']
+

@@ -1,0 +1,30 @@
+.class-add-schedule-day-button {
+  width: 27px;
+  height: 32px;
+  margin-right: 10px;
+  padding: 7px;
+  border-radius: 6px;
+  background-color: rgba(245, 245, 247, 0.6);
+
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1d1d1f;
+}
+
+.class-add-schedule-sun {
+  color: #ff4f4f;
+}
+
+.class-add-schedule-sat {
+  color: #4f6cff;
+}
+
+.class-add-schedule-day-button-on {
+  color: white;
+  background-color: #4f6cff;
+}

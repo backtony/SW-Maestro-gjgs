@@ -1,0 +1,70 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Team-Manage]]
+= Team-Manage API (팀 관리)
+
+[[Common-Error]]
+== 전반적으로 발생할 수 있는 에러들
+
+=== 팀 리더가 아닐 경우
+operation::team-manage-controller-test/common_errors_not_leader_exception[snippets='http-response']
+
+=== 팀 멤버가 아닐 경우
+operation::team-manage-controller-test/common_errors_not_team_member_exception[snippets='http-response']
+
+=== 팀 삭제, 리더 위임, 팀원 추방, 나가기 시 대기 중인 주문이 있을 경우
+operation::team-manage-controller-test/common_errors_has_wait_order_exception[snippets='http-response']
+
+[[Team-가입]]
+== 팀 가입 신청하기
+operation::team-manage-controller-test/apply_team[snippets='http-request,request-headers,path-parameters,http-response']
+
+=== 팀이 존재하지 않을 경우
+operation::team-manage-controller-test/apply_team_not_found_exception[snippets='http-response']
+
+=== 현재 팀이 모집중인 상황이 아닐 경우
+operation::team-manage-controller-test/apply_team_should_recruit_status[snippets='http-response']
+
+=== 신청자가 그룹에 속해있을 경우
+operation::team-manage-controller-test/apply_team_should_not_in_team_members[snippets='http-response']
+
+[[Team-가입-승인]]
+== 팀 가입 승인하기
+operation::team-manage-controller-test/accept_applier[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Team-가입-거절]]
+== 팀 가입 거절하기
+operation::team-manage-controller-test/reject_applier[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Team-조회]]
+== 팀에 신청한 신청자들 조회하기
+operation::team-manage-controller-test/get_team_appliers[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Team-추방]]
+== 팀에 속한 멤버를 추방하기
+operation::team-manage-controller-test/exclude_team_member[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Team-탈퇴]]
+== 팀에 속한 멤버가 팀 나가기
+operation::team-manage-controller-test/exit_team_member[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Team-위임]]
+== 팀에 속한 멤버에게 리더를 위임하기
+operation::team-manage-controller-test/delegate_team_leader[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+
+
+
+
+
+
+
+
+
+

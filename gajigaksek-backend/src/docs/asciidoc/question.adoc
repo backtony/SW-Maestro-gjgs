@@ -1,0 +1,34 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Question]]
+= Question API
+
+[[Question-생성]]
+== 질문글 생성하기
+operation::question-controller-test/create_question[snippets='http-request,request-headers,request-fields,http-response,response-fields']
+
+=== 로그인 하지 않았을 경우
+operation::common-doc-controller-test/have_not_user_authorization_sample[snippets='http-response']
+
+=== 클래스 ID와 질문글을 작성하지 않을 경우
+operation::question-controller-test/create_question_should_require_lecture_id_and_main_text[snippets='http-response']
+
+[[Question-조회]]
+== 질문글 상세 조회하기
+operation::question-controller-test/get_question[snippets='http-request,path-parameters,http-response,response-fields']
+
+[[Question-답글]]
+== 답글 작성하기
+operation::question-controller-test/reply_question[snippets='path-parameters,request-headers,request-body,request-fields,response-body,response-fields']
+
+=== 디렉터 권한이 없을 경우
+operation::common-doc-controller-test/have_not_director_authorization_sample[snippets='http-response']
+
+=== 해당 디렉터의 클래스가 아닌 경우
+operation::question-controller-test/reply_answer_should_need_director_authorization[snippets='response-body']

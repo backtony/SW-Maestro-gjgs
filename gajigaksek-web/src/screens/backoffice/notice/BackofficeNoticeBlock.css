@@ -1,0 +1,19 @@
+.backoffice-notice-edit-block-bottom {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.backoffice-notice-edit-block-bottom > button {
+  width: 100px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: #4f6cff;
+  color: white;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.backoffice-notice-edit-block-bottom :nth-child(2) {
+  background: #ff4f4f;
+}

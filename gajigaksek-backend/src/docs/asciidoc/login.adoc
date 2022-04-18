@@ -1,0 +1,54 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+
+[[Login]]
+= Login API
+
+== 앱 로그인
+operation::login-controller-test/login[snippets='http-request,request-headers']
+
+=== 기존 회원인 경우
+operation::login-controller-test/login[snippets='http-response,response-fields']
+
+=== 기존 회원이 아닌 경우
+operation::login-controller-test/login_fail_redirect_sign_up[snippets='http-response']
+
+=== 제약조건 오류
+operation::login-controller-test/login_fcm-token-request_valid_check[snippets='http-response']
+
+== 회원가입 및 로그인
+로그인 시도 후 기존 회원이 아닌 경우, 회원 가입을 진행하고 로그인한다.
+
+로그인 시도 후 받은 응답값의 데이터를 이용하여 회원가입을 요청한다.
+
+operation::login-controller-test/sign_up[snippets='http-request,request-fields,http-response']
+
+=== 제약조건 오류 샘플
+
+operation::login-controller-test/sign_up_bean_validation[snippets='http-response']
+
+=== 제약조건 논리적 오류 샘플
+
+operation::login-controller-test/sign_up_validator[snippets='http-response']
+
+== 웹 디렉터 & 어드민 로그인
+operation::login-controller-test/web_login_director[snippets='path-parameters']
+
+=== 디렉터 로그인
+operation::login-controller-test/web_login_director[snippets='http-request,request-headers']
+
+=== 어드민 로그인
+operation::login-controller-test/web_login_admin[snippets='http-request,request-headers,http-response']
+
+
+== 토큰 재발급
+operation::login-controller-test/reissue_token[snippets='http-request,request-headers,http-response,response-fields']
+
+== 로그아웃
+operation::login-controller-test/logout[snippets='http-request,request-headers,http-response']

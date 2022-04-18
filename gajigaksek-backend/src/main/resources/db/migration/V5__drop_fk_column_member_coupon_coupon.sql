@@ -1,0 +1,5 @@
+ALTER TABLE member_coupon
+DROP FOREIGN KEY FK_MEMBER_COUPON_COUPON;
+
+ALTER TABLE member_coupon
+DROP COLUMN coupon_id;

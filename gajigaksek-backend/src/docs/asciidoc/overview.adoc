@@ -1,0 +1,47 @@
+[[overview]]
+== Overview
+
+[[호스트-서버]]
+=== 호스트 서버
+
+|===
+| 환경 | Host
+
+| Beta
+| `localhost:8080`
+
+| Production
+| `https://gjgs-test.com`
+|===
+
+[[HTTP-상태-코드]]
+=== HTTP 상태 코드
+
+|===
+| 상태 코드 | 설명
+
+| `200 OK`
+| 성공
+
+| `400 Bad Request`
+| 잘못된 요청
+
+| `401 Unauthorized`
+| 비인증 상태 - 로그인 필요
+
+| `403 Forbidden`
+| 권한 거부
+
+| `404 Not Found`
+| 존재하지 않는 리소스 요청
+
+| `500 Internal Server Error`
+| 서버 에러
+|===
+
+[[HTTP-공통-에러-코드]]
+=== HTTP 공통 에러 코드
+operation::common-doc-controller-test/error_sample[snippets='http-response,response-fields']
+
+
+

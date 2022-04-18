@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[bulletin-enums]]
+== 검색할 스케줄의 상태
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-getScheduleType']

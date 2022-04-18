@@ -1,0 +1,146 @@
+spring:
+  profiles:
+    active: dev
+
+# fcm
+fcm:
+  key:
+    path: 삭제
+    scope: 삭제
+
+# iamport
+iamport:
+  apiKey: 삭제
+  apiSecret: 삭제
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  # AWS RDS(MySQL / Aurora)
+  datasource:
+    url: jdbc:mysql://gjgs-1.cvowj9xkrrgz.ap-northeast-2.rds.amazonaws.com:3306/gjgs?rewriteBatchedStatements=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: 삭제
+    password: 삭제
+
+
+  jpa:
+    database: mysql
+    defer-datasource-initialization: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.default_batch_fetch_size: 1000
+    open-in-view: false
+
+  # elasticsearch
+  elasticsearch:
+    rest:
+      username: 삭제
+      password: 삭제
+      uris:
+        - 10.0.7.8:9200
+        - 10.0.7.190:9200
+        - 10.0.7.46:9200
+
+  redis:
+    pool:
+      min-idle: 0
+      max-idle: 8
+      max-active: 8
+    cluster:
+      nodes:
+        - 10.0.5.234:5001
+        - 10.0.6.23:5001
+        - 10.0.5.7:5001
+    password: 삭제
+
+  batch:
+    job:
+      enabled: false
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: false
+
+logging:
+  file:
+    name: logs/error.log
+  pattern:
+    file: "[%d{yyyy-MM-dd HH:mm:ss}][%-5level][%logger.%method:line%line] - %msg%n"
+  level:
+    root: error
+  logback:
+    rollingpolicy:
+      max-file-size: 50MB
+      max-history: 14
+      total-size-cap: 1GB
+      file-name-pattern: "/logs/error.%d{yyyy-MM-dd}_%i.log"
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa:
+    defer-datasource-initialization: true
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate.default_batch_fetch_size: 1000
+    open-in-view: false
+    show-sql: true
+
+  redis:
+    pool:
+      min-idle: 0
+      max-idle: 8
+      max-active: 8
+    port: 6379
+    host: localhost
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+
+# elasticsearch
+  elasticsearch:
+    rest:
+      username: 삭제
+      password: 삭제
+      host: 127.0.0.1
+      port: 9200
+
+
+# for using korean words
+server:
+  servlet:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+    # for jdbc native
+    org.springframework.jdbc.core.JdbcTemplate: DEBUG
+    org.springframework.jdbc.core.StatementCreatorUtils: TRACE
+

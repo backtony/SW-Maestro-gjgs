@@ -1,0 +1,71 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[My-Info-Edit]]
+= My Info Edit API
+
+== 마이페이지 편집창 페이지
+operation::my-info-edit-controller-test/get_member_edit_page[snippets='http-request,request-headers,http-response,response-fields']
+
+== 닉네임 수정
+operation::my-info-edit-controller-test/update_nickname[snippets='http-request,request-headers,request-fields,http-response']
+
+
+=== 오류 샘플
+==== 닉네임에 특수문자가 들어간 경우
+operation::my-info-edit-controller-test/update_nickname_should_not_special_words[snippets='http-response']
+==== 닉네임을 1글자로 수정할 경우
+operation::my-info-edit-controller-test/update_nickname_should_over_2_length[snippets='http-response']
+==== 닉네임이 중복되는 경우
+operation::my-info-edit-controller-test/update_nickname_should_not_duplicate[snippets='http-response']
+
+== 전화번호 수정
+operation::my-info-edit-controller-test/update_phone[snippets='http-request,request-headers,request-fields,http-response']
+
+=== 오류 샘플
+==== 전화번호가 10자 미만인 경우
+operation::my-info-edit-controller-test/update_phone_should_over_10_length[snippets='http-response']
+==== 전화번호가 중복된 경우
+operation::my-info-edit-controller-test/update_phone_should_not_duplicate[snippets='http-response']
+
+== 선호하는 카테고리 수정
+operation::my-info-edit-controller-test/update_category[snippets='http-request,request-headers,request-fields,http-response']
+
+=== 오류 샘플
+==== 존재하지 않는 카테고리 Id로 수정
+operation::my-info-edit-controller-test/update_category_not_found[snippets='http-response']
+
+== 자기소개 수정
+operation::my-info-edit-controller-test/update_profile[snippets='http-request,request-headers,request-fields,http-response']
+
+=== 오류 샘플
+==== 1000자 이상으로 자기소개 수정
+operation::my-info-edit-controller-test/update_profile_should_not_over_1000_length[snippets='http-response']
+
+== 위치 수정
+operation::my-info-edit-controller-test/update_zone[snippets='http-request,request-headers,request-fields,http-response']
+
+=== 오류 샘플
+==== 존재하지 않는 위치 Id로 수정
+operation::my-info-edit-controller-test/update_zone_should_exist_zone[snippets='http-response']
+
+== 이미지 수정
+operation::my-info-edit-controller-test/update_image[snippets='http-request,request-headers,http-response']
+
+== 디렉터 편집창 페이지
+operation::director-edit-controller-test/get_director_edit[snippets='http-request,request-headers,http-response,response-fields']
+
+== 디렉터 소개 수정
+operation::director-edit-controller-test/update_director_text[snippets='http-request,request-headers,request-fields,http-response']
+
+=== 오류 샘플
+==== 1000자 이상으로 수정
+operation::director-edit-controller-test/update_director_text_should_not_over_1000_length[snippets='http-response']
+
+== 이벤트 알림 수신 여부 수정
+operation::my-info-edit-controller-test/edit_my_event_alarm[snippets='http-request,request-headers,request-fields,http-response']

@@ -1,0 +1,17 @@
+.bulletin-detail-title {
+  margin-top: 40px;
+}
+
+.bulletin-detail-text {
+  width: 100px;
+}
+
+.bulletin-detail-text > div {
+  width: 500px;
+}
+
+.bulletin-detail-text > textarea {
+  width: 500px;
+  height: 500px;
+  background-color: transparent;
+}

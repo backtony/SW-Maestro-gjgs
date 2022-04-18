@@ -1,0 +1,21 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Member-Coupon]]
+= Member-Coupon API
+
+[[Member-Coupon-발급]]
+== Member-Coupon 발급 받기
+operation::member-coupon-controller-test/get_member_coupon[snippets='http-request,request-headers,path-parameters,http-response']
+
+=== 쿠폰 관련 예외가 발생했을 경우
+operation::member-coupon-controller-test/get_member_coupon_should_not_coupon_exception[snippets='http-response']
+
+[[Member-Coupon-조회]]
+== Member-Coupon 조회하기(결제 시 내가 사용할 수 있는 Member-Coupon)
+operation::member-coupon-controller-test/get_enable_member_coupon[snippets='http-request,request-headers,path-parameters,http-response,response-fields']

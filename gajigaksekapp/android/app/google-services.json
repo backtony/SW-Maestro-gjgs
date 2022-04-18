@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "642887094981",
+    "project_id": "gjgs-1057b",
+    "storage_bucket": "gjgs-1057b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642887094981:android:1c662dcab384c346b756ac",
+        "android_client_info": {
+          "package_name": "com.gajigaksekapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642887094981-agecc92cskeb415ijdmf4p0tracs91r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHnjZOLKYUYfrj22u4zDJztQByhP9Rmng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642887094981-agecc92cskeb415ijdmf4p0tracs91r2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "642887094981-9slpsbdvpkisfdb4qogt4im78fjnv0on.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.gajigaksekapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

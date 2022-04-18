@@ -1,0 +1,47 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+
+[[Favorite]]
+= Favorite API
+
+[[Favorite-Lecture-가능한-팀들-조회]]
+== Favorite-Lecture 찜 가능한 팀들 조회
+operation::favorite-controller-test/get_my_favorite_lecture_and_team[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Favorite-Lecture-개인-클래스-찜]]
+== Favorite-Lecture 개인 클래스 찜하기
+operation::favorite-controller-test/add_my_favorite_lecture[snippets='http-request,request-headers,path-parameters,http-response']
+
+[[Favorite-Lecture-개인-클래스-찜-삭제]]
+== Favorite-Lecture 개인 클래스 찜 삭제
+operation::favorite-controller-test/delete_my_favorite_lecture[snippets='http-request,request-headers,path-parameters,http-response']
+
+[[Favorite-Lecture-팀-클래스-찜]]
+== Favorite-Lecture 내가 속한 팀에 클래스 찜하기
+operation::favorite-controller-test/add_team_favorite_lecture[snippets='http-request,request-headers,path-parameters,http-response']
+
+[[Favorite-Lecture-팀-클래스-찜-조회]]
+== Favorite-Lecture 팀이 찜한 클래스 조회하기
+operation::favorite-controller-test/get_team_favorite_lectures[snippets='http-request,request-headers,path-parameters,http-response,response-fields']
+
+[[Favorite-Lecture-팀-클래스-찜-삭제]]
+== Favorite-Lecture 팀이 찜한 클래스 삭제하기
+operation::favorite-controller-test/delete_team_favorite_lecture[snippets='http-request,request-headers,path-parameters,http-response']
+
+[[Favorite-Lecture-개인-게시글-찜]]
+== Favorite-Bulletin 개인의 게시글 찜하기
+operation::favorite-controller-test/add_my_favorite_bulletin[snippets='http-request,request-headers,path-parameters,http-response']
+
+[[Favorite-Lecture-개인-게시글-찜-조회]]
+== Favorite-Bulletin 개인의 찜한 게시글들 조회하기
+operation::favorite-controller-test/get_my_favorite_bulletins[snippets='http-request,request-headers,http-response,response-fields']
+
+[[Favorite-Lecture-개인-게시글-찜-삭제]]
+== Favorite-Bulletin 개인의 찜한 게시글 삭제하기
+operation::favorite-controller-test/delete_my_favorite_bulletin[snippets='http-request,request-headers,path-parameters,http-response']

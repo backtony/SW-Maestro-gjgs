@@ -1,0 +1,57 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Team]]
+= Team API (CRUD)
+
+[[Common-Error]]
+== 전반적으로 발생할 수 있는 에러들
+
+=== 팀이 존재하지 않을 경우
+operation::team-controller-test/common_errors_team_not_found_exception[snippets='http-response']
+
+=== 팀장 권한이 없을 경우
+operation::team-controller-test/team_common_errors_should_need_leader_authorization[snippets='http-response']
+
+[[Team-생성]]
+== 팀 생성하기
+operation::team-controller-test/create_team[snippets='http-request,request-headers,request-fields,response-body,response-fields']
+
+=== 시간과 요일을 형식에 맞지 않게 입력할 경우
+operation::team-controller-test/create_team_should_follow_day_time_constraints[snippets='http-response']
+
+=== 모든 입력값을 입력하지 않았을 때
+operation::team-controller-test/create_team_should_follow_constraint[snippets='http-response']
+
+=== 선택한 지역 ID가 없을 때
+operation::team-controller-test/create_team_zone_not_found_exception[snippets='http-response']
+
+=== 선택한 카테고리 ID가 없을 때
+operation::team-controller-test/create_team_category_not_found_exception[snippets='http-response']
+
+[[Team-조회]]
+== 팀 조회하기
+operation::team-controller-test/get_my_teams[snippets='http-request,request-headers,response-body,response-fields']
+
+== 상세 조회
+operation::team-controller-test/get_team_detail[snippets='http-request,request-headers,path-parameters,response-body,response-fields']
+
+== 내가 팀장인 팀 가져오기
+operation::team-controller-test/get_my_lead_teams[snippets='http-request,request-headers,response-body,response-fields']
+
+
+[[Team-수정]]
+== 팀 수정하기
+operation::team-controller-test/update_team[snippets='http-request,request-headers,request-fields,http-response,response-fields']
+
+=== 현재 인원보다 적은 인원으로 그룹 최대 인원을 설정할 경우
+operation::team-controller-test/update_team_should_modify_member_count_over_current_member_count[snippets='http-response']
+
+[[Team-삭제]]
+== 팀 삭제하기
+operation::team-controller-test/delete_team[snippets='http-request,request-headers,path-parameters,http-response,response-fields']

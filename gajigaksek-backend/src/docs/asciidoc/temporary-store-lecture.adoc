@@ -1,0 +1,81 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Temporary-Store-Lecture]]
+= Temporary-Store-Lecture API (클래스 임시 저장)
+
+[[Common-Error]]
+== 공통적으로 발생할 수 있는 에러
+
+=== 썸네일을 복수(2개 이상)로 주었을 경우
+operation::temporary-storage-lecture-controller-test/common_exception_should_thumbnail_is_one[snippets='http-response']
+
+=== 사진이 필요할 때 주지 않았을 경우
+operation::temporary-storage-lecture-controller-test/common_exception_should_not_file_missing[snippets='http-response']
+
+=== 사진의 갯수와 입력 정보(커리큘럼, 완성작)의 갯수가 맞지 않을 경우
+operation::temporary-storage-lecture-controller-test/common_exception_should_equal_file_size_and_contents_size[snippets='http-response']
+
+[[Put-Lecture-First]]
+== 클래스 처음 저장하기
+operation::temporary-storage-lecture-controller-test/save_lecture_first[snippets='http-request,request-headers,request-parts,request-part-request-fields,http-response,response-fields']
+
+=== 클래스 취미 카테고리, 제목, 지역, 주소가 없을 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_first_should_follow_constraints[snippets='http-response']
+
+=== 클래스 저장 시, 클래스 제목이 10자 미만인 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_first_should_lecture_title_over_10_length[snippets='http-response']
+
+[[Put-Lecture-Intro]]
+== 클래스 소개 저장하기 (소개글과 완성작)
+operation::temporary-storage-lecture-controller-test/save_lecture_intro[snippets='http-request,request-headers,request-parts,request-part-request-fields,http-response,response-fields']
+
+=== 소개글, 완성작 정보가 없을 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_intro_should_follow_constraints[snippets='http-response']
+
+=== 완성작 리스트 순서, 제목이 없고, 설명글이 10자 이하 일 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_intro_should_main_text_over_10_length_and_not_input_order_text[snippets='http-response']
+
+[[Put-Lecture-Curriculum]]
+== 클래스 커리큘럼 저장하기
+operation::temporary-storage-lecture-controller-test/save_lecture_curriculum[snippets='http-request,request-headers,request-parts,request-part-request-fields,http-response,response-fields']
+
+=== 커리큘럼을 입력하지 않았을 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_curriculum_should_not_input_curriculum[snippets='http-response']
+
+=== 커리큘럼 리스트 내에서 제약조건을 지키지 않았을 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_curriculum_should_not_constraint[snippets='http-response']
+
+[[Put-Lecture-Schedule]]
+== 클래스 스케줄 저장하기
+operation::temporary-storage-lecture-controller-test/save_lecture_schedules[snippets='http-request,request-headers,request-part-request-fields,http-response,response-fields']
+
+=== Date가 비어있고 startHour, endHour 제약조건을 지키지 않을 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_schedules_should_follow_date_and_hour[snippets='http-response']
+
+=== 날짜에 맞지 않는 값, startMinute 60 초과, participants 음수 제약조건 체크하기
+operation::temporary-storage-lecture-controller-test/save_lecture_schedules_should_divide_and_constraint_minute[snippets='http-response']
+
+[[Put-Lecture-Price-Coupon]]
+== 클래스 가격 정책과 쿠폰 정책
+operation::temporary-storage-lecture-controller-test/save_lecture_price_coupon[snippets='http-request,request-headers,request-part-request-fields,http-response,response-fields']
+
+[[Post-Lecture]]
+== 클래스 이용 약관 동의
+operation::temporary-storage-lecture-controller-test/save_lecture_terms[snippets='http-request,request-headers,request-fields,http-response,response-fields']
+
+=== 이용 약관에 동의하지 않을 경우
+operation::temporary-storage-lecture-controller-test/save_lecture_terms_should_all_true[snippets='http-response']
+
+[[Get-Teamporary-Stored-Lecture]]
+=== 임시 저장 클래스가 없을 경우
+operation::temporary-storage-lecture-controller-test/get_temporary_stored_lecture_not_found[snippets='http-response']
+
+[[Delete-Teamporary-Stored-Lecture]]
+== 임시 저장 클래스 삭제하기
+operation::temporary-storage-lecture-controller-test/delete_temporary_store_lecture[snippets='http-request,request-headers,http-response,response-fields']

@@ -1,0 +1,13 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Member-Search]]
+= Member Search API
+
+== 회원 검색
+operation::member-search-controller-test/search_member[snippets='http-request,request-headers,request-parameters,http-response']

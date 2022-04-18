@@ -1,0 +1,182 @@
+.class-add-curriculum-form-img-title {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.class-add-curriculum-form-img-wrapper {
+  width: 262px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.class-add-curriculum-form-img-button {
+  width: 240px;
+  height: 240px;
+  padding: 83px 38px;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+  margin-top: 10px;
+
+  color: #8e8e8f;
+}
+
+.class-add-curriculum-form-img-button-text {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8e8e8f;
+
+  margin-top: 10px;
+}
+
+.class-add-curriculum-img-input {
+  display: none;
+}
+
+.class-add-curriculum-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 10px;
+  position: relative;
+  top: -85px;
+  left: -40px;
+}
+
+.class-add-curriculum-form-container {
+  display: flex;
+}
+
+.class-add-curriculum-info-input-small {
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #8e8e8f;
+
+  margin-top: 4px;
+}
+
+.class-add-curriculum-info-select {
+  width: 500px;
+  height: 44px;
+  padding: 12px 10px 12px 20px;
+  border-radius: 10px;
+  background-color: #f9f9fa;
+  margin-top: 10px;
+  border-width: 0px;
+
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.class-add-curriculum-info-input-two-input-wrapper {
+  width: 480px;
+  height: 44px;
+  border-radius: 10px;
+  padding-left: 20px;
+  background-color: #f9f9fa;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.class-add-curriculum-info-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 270px;
+}
+
+.class-add-curriculum-detail-wrapper {
+  margin-left: 20px;
+}
+
+.class-add-curriculum-detail-input-wrapper {
+  width: 700px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+
+  margin-top: 10px;
+  padding: 11px 20px 11px 20px;
+}
+
+.class-add-curriculum-textarea {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #8e8e8f;
+
+  background-color: transparent;
+
+  width: 700px;
+}
+
+.asdf {
+  margin-top: 20px;
+}
+
+.asdf2 {
+  margin-right: 6px;
+}
+
+.class-add-curriculum-table-header {
+  display: flex;
+}
+
+.sos11 {
+  width: 100px;
+  height: 60px;
+  background-color: rgba(245, 245, 247, 0.6);
+
+  padding-left: 20px;
+
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+
+  display: flex;
+  align-items: center;
+}
+
+.class-add-curriculum-table-header1 {
+  width: 100px;
+}
+
+.class-add-curriculum-table-header2 {
+  width: 300px;
+}
+
+.class-add-curriculum-table-header3 {
+  width: 400px;
+}
+
+.class-add-curriculum-table-header4 {
+  width: 740px;
+}

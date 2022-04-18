@@ -1,0 +1,133 @@
+.question-manage-header > div {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1d1d1f;
+}
+
+.question-manage-header {
+  width: 770px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.question-button {
+  width: 770px;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.question-button > div {
+  display: flex;
+  align-items: center;
+}
+
+.question-button-Q {
+  font-size: 48px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #4f6cff;
+}
+
+.question-button-title-wrapper {
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.question-button-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.question-button-class-title {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #999;
+  margin-top: 10px;
+}
+
+.wtf22 {
+  color: #8e8e8f;
+}
+
+.question-item-content {
+  width: 770px;
+}
+
+.question-item-content-text {
+  margin: 20px;
+}
+
+.question-input-wrapper {
+  width: 740px;
+  height: 160px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f5f5f7;
+}
+
+.question-input-wrapper > textarea {
+  width: 720px;
+  height: 120px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  background-color: transparent;
+}
+
+.question-input-wrapper > div > button {
+  width: 100px;
+  height: 32px;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background-color: #4f6cff;
+
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.question-input-wrapper > div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.question-item-content-off {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.question-item-content-on {
+  transition: all 0.5s ease;
+}

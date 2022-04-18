@@ -1,0 +1,56 @@
+{
+  "properties": {
+    "lectureId" : {"type" : "integer"},
+    "imageUrl" : {"type" : "text"},
+    "title" : {
+      "type" : "text",
+      "analyzer": "my_analyzer"
+    },
+    "description" : {
+      "type" : "text",
+      "analyzer": "my_analyzer"
+    },
+    "finishedProductText" : {
+      "type" : "text",
+      "analyzer": "my_analyzer"
+    },
+    "zoneId" : {
+      "type" :  "long"
+    },
+    "categoryId" : {
+      "type" : "long"
+    },
+    "regularPrice" : {
+      "type" : "integer"
+    },
+    "priceOne" : {
+      "type" : "integer"
+    },
+    "priceTwo" : {
+      "type" : "integer"
+    },
+    "priceThree" : {
+      "type" : "integer"
+    },
+    "priceFour" : {
+      "type" : "integer"
+    },
+    "reviewCount" : {
+      "type" : "integer"
+    },
+    "clickCount" : {
+      "type" : "long"
+    },
+    "score" : {
+      "type" : "double"
+    },
+    "createdDate" : {
+      "type" : "date",
+      "format": "yyyy-MM-dd'T'HH:mm:ss.SSS||yyyy-MM-dd||epoch_millis"
+    },
+    "lastModifiedDate" : {
+      "type" : "date",
+      "format": "yyyy-MM-dd'T'HH:mm:ss.SSS||yyyy-MM-dd||epoch_millis"
+    }
+  }
+}

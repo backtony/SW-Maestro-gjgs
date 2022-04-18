@@ -1,0 +1,95 @@
+.coupon-manage-detail-text {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #1d1d1f;
+  width: 623px;
+  margin-top: 40px;
+}
+
+.coupon-manage-button {
+  width: 142px;
+  height: 44px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-manage-button > div {
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  margin-left: 6px;
+}
+
+.t2 {
+  background-color: #ff4f4f;
+  color: #fff;
+}
+
+.t3 {
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  margin-left: 20px;
+}
+
+.coupon-manage-button-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+.coupon-manage-header {
+  display: flex;
+  margin-top: 40px;
+}
+
+.coupon-manage-header > div {
+  background-color: rgba(245, 245, 247, 0.6);
+  font-size: 16px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: #8e8e8f;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+}
+
+.coupon-manage-header > div > div {
+  margin-left: 20px;
+}
+
+.coupon-manage-header1 {
+  width: 64px;
+}
+
+.coupon-manage-header2 {
+  width: 300px;
+}
+
+.coupon-manage-header3 {
+  width: 120px;
+}
+
+.coupon-manage-header4 {
+  width: 240px;
+}
+
+.coupon-manage-header5 {
+  width: 200px;
+}
+
+.coupon-manage-header6 {
+  width: 188px;
+}

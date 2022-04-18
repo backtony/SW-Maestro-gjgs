@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[create-lecture-step-enums]]
+== 클래스 임시 저장 enum
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-createLectureStep']

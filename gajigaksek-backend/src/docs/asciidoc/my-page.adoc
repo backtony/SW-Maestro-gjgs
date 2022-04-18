@@ -1,0 +1,60 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+
+[[My-Page-API]]
+= My Page API
+
+== 마이페이지
+operation::my-page-controller-test/get_mypage[snippets='http-request,request-headers,http-response,response-fields']
+
+== 내 게시글 조회
+operation::my-page-controller-test/get_my_bulletins[snippets='http-request,request-headers,http-response,response-fields']
+
+== 내 문의글 조회
+operation::my-page-controller-test/get_my_questions[snippets='http-request,request-headers,http-response,response-fields']
+
+== 내가 작성한 문의글 수정
+operation::my-page-controller-test/update_question[snippets='path-parameters,http-request,request-headers,request-fields,http-response']
+
+=== 오류 샘플
+==== 10자 미만으로 수정할 경우
+operation::my-page-controller-test/update_question_should_over_10_length[snippets='http-response']
+
+== 내가 작성한 문의글 삭제
+operation::my-page-controller-test/delete_my_question[snippets='path-parameters,http-request,http-response']
+
+== 타인의 회원 정보 프로필
+operation::my-page-controller-test/get_info[snippets='path-parameters,http-request,http-response,response-fields']
+
+== 디렉터로 전환하기
+operation::my-page-controller-test/switch_director[snippets='http-request,request-headers,http-response']
+
+== 나의 리워드 상세 조회
+operation::my-page-controller-test/get_my_reward_use[snippets='path-parameters,http-request,request-headers,request-fields,http-response,response-fields']
+
+== 마이페이지 나의 클래스
+operation::my-page-controller-test/get_my_lectures[snippets='http-request,request-headers,http-response,response-fields']
+
+== 결제 완료된 상세페이지 조회하기
+operation::my-page-controller-test/get_my_payment_lecture_detail[snippets='path-parameters,http-request,request-headers,http-response,response-fields']
+
+== 나의 클래스에서 해당 팀의 결제 진행 상태 보여주기
+operation::my-page-controller-test/get_team_member_orders[snippets='path-parameters,http-request,request-headers,http-response,response-fields']
+
+== 내가 작성한 리뷰 조회
+operation::my-page-controller-test/get_my_reviews[snippets='http-request,request-headers,http-response,response-fields']
+
+== 나의 쿠폰 조회하기
+operation::my-page-controller-test/get_my_coupons[snippets='http-request,request-headers,http-response,response-fields']
+
+== 알림 조회
+operation::my-page-controller-test/get_my_notification[snippets='http-request,request-headers,request-fields,http-response,response-fields']
+
+== 알림 수신 여부 확인
+operation::my-page-controller-test/get_my_event_alarm[snippets='http-request,request-headers,http-response']

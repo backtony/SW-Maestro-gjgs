@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[Order-status-enums]]
+== 주문 상태
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-orderStatus']

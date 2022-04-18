@@ -1,0 +1,6 @@
+:doctype: book
+:icons: font
+
+[[bulletin-enums]]
+== 어드민이 클래스를 수락 / 거부하는 상태
+operation::common-doc-controller-test/enums[snippets='custom-response-fields-decideLectureType']

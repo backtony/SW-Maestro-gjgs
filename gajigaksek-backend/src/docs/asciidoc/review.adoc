@@ -1,0 +1,31 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+:sectlinks:
+:docinfo: shared-head
+
+[[Review]]
+= Review API
+
+[[Review-작성하기]]
+== 리뷰 작성하기
+operation::review-controller-test/write_review[snippets='http-request,request-headers,request-parts,request-part-request-fields,http-response']
+
+=== 리뷰 작성시 제약 조건을 만족하지 않았을 경우
+operation::review-controller-test/write_review_should_require_constraint[snippets='http-response']
+
+[[Review-답글-작성하기]]
+== 리뷰 답글 작성하기
+operation::review-controller-test/reply_review[snippets='http-request,request-headers,path-parameters,request-body,http-response']
+
+=== 답글 작성 시, 답글을 입력하지 않을 경우
+operation::review-controller-test/reply_review_should_write_reply[snippets='http-response']
+
+=== 디렉터 권한이 없을 경우
+operation::common-doc-controller-test/have_not_director_authorization_sample[snippets='http-response']
+
+[[Review-디렉터-후기]]
+== 디렉터의 모든 후기 가져오기
+operation::review-controller-test/get_director_reviews[snippets='http-request,path-parameters,http-response,response-fields']

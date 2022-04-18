@@ -1,0 +1,5 @@
+ALTER TABLE member_coupon
+    MODIFY serial_number VARCHAR(255) NOT NULL;
+
+ALTER TABLE member_coupon
+DROP KEY UK_MEMBER_COUPON_SERIAL_NUMBER;
