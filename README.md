@@ -100,7 +100,7 @@
 - [협업 방식 - Jira](#jira)
 - [팀의 개발 문화](#culture)
 - [ERD](#erd)  
-- [테스트](#test)
+- [테스트 및 모니터링](#test)
 - [왜 이 기술을 사용했는가?](#why)
 - [리팩토링 & 성능 개선](#refactoring)
 - [성과 및 회고](#retrospection)
@@ -110,13 +110,22 @@
 
 # 📝 개요 <a name = "outline"></a>
 
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 취미 생활 및 자기계발 활동에 금전적으로 투자하는 사람들이 지속적으로 증가하고 있으며, 20 ~ 30대 대상 685명 설문조사 결과 사람들은 취미를 혼자보다 함께 즐기고 싶어할뿐만 아니라 전체의 75% 이상이
 처음만나는 사람과도 함께 취미를 즐기고 싶다고 답변했습니다. 또한, 유료로 취미생활 및 자기계발 분야 참여시 전체의 63%가 오프라인 방식을 선호하였습니다.
 저희는 취미 관련 오프라인 유료 클래스의 수요가 충분하다는 것을 파악하였고, 기존 업체들의 문제점들을 보완하여 오프라인 클래스 중개 플랫폼을 서비스하고자 합니다.
 
+</details>
+
 <br>
 
 # 🧐 Pain Point <a name = "pain_point"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 
 ### 현재 오프라인 취미 클래스 중개 업체들의 문제점
 
@@ -137,9 +146,15 @@
     - 사람을 모아주는 역할만 하기 때문에 취미를 제대로 배우고 싶은 사람들에게 부적합
     - 30 ~ 50 명의 그룹으로 형성되어 있어 관리가 어려움
 
+</details>
+
 <br>
 
 # 💡 Idea / Solution <a name = "idea"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 
 + 그룹 시스템
     - 클래스 수강 신청 전에 취미가 비슷한 사람들을 찾고, 서로 소통할 수 있는 그룹을 만들 수 있는 기능
@@ -176,9 +191,15 @@
 
 
 
+</details>
+
 <br>
 
 # 📈 아키텍처  <a name = "structure"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 
 <div align="center">
  <img src="/images/structure.PNG" alt="structure">
@@ -204,9 +225,15 @@ RDS의 경우 DB 이중화를 통해 부하를 줄여주었습니다.
 모니터링의 경우 Kibana와 Redis-stat를 사용했습니다.  
 
 
+</details>
+
 <br>
 
 # 🎁 결과물  <a name = "outputs"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 
 ## 앱
 ### 메인페이지
@@ -570,11 +597,17 @@ RDS의 경우 DB 이중화를 통해 부하를 줄여주었습니다.
 
 + 공지사항을 생성, 수정, 삭제 할 수 있는 페이지
 
-
+</details>
 
 <br>
 
+
 # ⏰ 협업 방식 - Jira <a name = "jira"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
+
 
 <div align="center">
  <img src="/images/roadmap.PNG" alt="roadmap">
@@ -593,9 +626,17 @@ RDS의 경우 DB 이중화를 통해 부하를 줄여주었습니다.
 칸반보드를 통해 task들을 개발해야할 모든 기능들, 이번주에 개발해야할 기능, 개발 진행중, 개발 완료된 칸으로 옮기면서 한눈에 볼 수 있도록 진행했습니다.  
 스프린트는 1주일 단위로 설정하여 Jira 내 Confluence에서 스프린트 주기동안 진행해야할 기능들을 정의하고 마음가짐과 스프린트를 마친 후 회고를 작성하는 방식으로 스프린트를 진행했습니다.  
 
-<Br>
+</details>
+
+<br>
+
 
 # 🎈 팀의 개발 문화 <a name = "culture"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
+
 
 ## 수정에는 관대하게, 오류 시 질책보다는 배우자.
 프로젝트 초기 설계 당시, 김기완 팀원이 인턴을 하면서 백엔드분들께 API를 변경해달라, 어떤 정보가 더 필요하다는 요청을 했을 때 백엔드 분들께서 별로 달갑지 않아 했던 경험을 이야기해 주었습니다.  
@@ -611,17 +652,31 @@ RDS의 경우 DB 이중화를 통해 부하를 줄여주었습니다.
 따라서 부족한 부분에 대해서는 서로에게 바로 도움을 줄 수 있었고, 도입하고자 하는 기술에 대해서는 서로의 생각과 근거를 명확히 제시하면서 의견을 교환하고 정했습니다. 이에 대한 결과물은 뒤에 나오는 [왜 이 기술을 사용했는가?](#why), [리팩토링 & 성능 개선](#refactoring)에 정리했습니다.
 
 
-<Br>
+</details>
+
+<br>
+
 
 # 📈 ERD <a name = "erd"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
+
 
 <div align="center">
  <img src="/images/erd.png" alt="erd">
 </div>
 
-<Br>
+</details>
 
-# 🔨 테스트 <a name = "test"></a>
+<br>
+
+# 🔨 테스트 및 모니터링 <a name = "test"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 
 ## Unit Test
 <div align="center">
@@ -657,9 +712,15 @@ RDS의 경우 DB 이중화를 통해 부하를 줄여주었습니다.
 
 + Redis-stat를 사용한 Redis 모니터링 페이지
 
+</details>
+
 <br>
 
 # 💎 왜 이 기술을 사용했는가? <a name = "why"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 
 ## API 문서화
 
@@ -831,9 +892,15 @@ CI/CD 구축을 처음 진행해보기에 처음에는 가장 간단한 Travis C
 백엔드 서버 혹은 외부 API에서 데이터 요청 시 CORS 정책으로 인해 통신이 잘 이루어지지 않는 문제가 있었습니다.  
 임시적인 방편으로 보편적으로 사용되는 “Access-Control-Allow-Origin” 헤더를 통해 해결을 시도했으나 이 또한 문제가 있어 Proxy서버와 DNS를 통해 해결을 하였습니다.
 
-<Br>
+</details>
+
+<br>
 
 # 🚀 리팩토링 & 성능 개선 <a name = "refactoring"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
 
 ## 의미있는 이름과 함수
 코드를 다시 되돌아보았을 때, 당시에는 이해할 수 있을 정도의 이름으로 지었다고 생각했으나 명확하게 와닿지 않는 네이밍들이 있었습니다.  
@@ -983,9 +1050,17 @@ public void checkTeamLeader(Team team) {
 H2를 사용할 경우, Bulk Insert 부분에서 쿼리가 정확히 나가는지 확인할 수 없었습니다.  
 Test 전체에서 MySQL Test Container을 띄워서 사용하기에는 수행 시간이 너무 오래걸리기에 호환되지 않는 문법에 한해서만 Test Container를 적용하여 테스트를 진행했습니다.
 
+</details>
+
 <br>
 
 # 📌 성과 및 회고 <a name = "retrospection"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
+
+
 앞서 기술적인 부분에 대해서는 모두 언급했고, 이 부분에서는 __비개발적인 측면__ 에서 저 [Backtony(최준성)](https://github.com/backtony)만의 개인적인 의견을 작성하겠습니다.  
 <br>
 
@@ -1037,15 +1112,31 @@ __프로젝트 이후 공부한 내용__
 
 
 
-<Br>
+</details>
+
+<br>
 
 # 시연 영상
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
+
+
 [시연 영상](https://www.youtube.com/watch?v=BDnmRlhpV-M)  
 최종 발표 진행 중에 사용한 시연 영상입니다.
+
+</details>
 
 <br>
 
 # ✍️ 프로젝트 종료 이후 혼자서 진행한 리팩토링 <a name = "update"></a>
+
+<details>
+   <summary> 본문 확인 (👈 Click)</summary>
+<br />
+
+
 여기부터 작성하는 내용은 [Backtony(최준성)](https://github.com/backtony)가 프로젝트가 끝난 이후 혼자서 시도하는 내용입니다.  
 프로젝트가 끝난 후 공부한 내용을 적용하기 위해 시작합니다.  
 오랜기간 동안 팀원이 같이 진행해온 프로젝트이다 보니 혼자 진행하기에는 양이 너무 방대하여 제가 작성한 코드에 대해서만 적용해보려고 합니다.  
@@ -1330,3 +1421,7 @@ gson을 제거하고 내장되어있는 jackson 사용으로 변경했습니다.
 프로젝트 초기 시점에 로그인 파트를 담당해서 구축했었는데 그 당시에는 지식이 부족해서 아쉬운 점이 많았습니다.  
 이 부분은 현재 프로젝트에서 수정하기보다는 새롭게 만들어 여러 소셜 로그인을 지원하도록 확장성 있게 구현해 보았습니다.  
 해당 코드는 [여기](https://github.com/backtony/spring-study/tree/master/spring-security-oauth2-jwt-redis)를 확인 부탁드립니다.  
+
+</details>
+
+<br>
